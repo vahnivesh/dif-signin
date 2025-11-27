@@ -13,7 +13,7 @@ from cryptography.hazmat.primitives.serialization import load_der_public_key
 # ----------------- CONFIG -----------------
 
 # Your ngrok domain
-NGROK_URL = "https://vaporous-merri-transseptal.ngrok-free.dev"
+NGROK_URL = "https://dif-signin.vercel.app"
 
 # Where passkeys are stored
 PASSKEY_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "passkey.json")
@@ -253,3 +253,4 @@ def serve_public(filename):
 
 if __name__ == "__main__":
     app.run(port=5000, host="0.0.0.0", debug=True)
+
